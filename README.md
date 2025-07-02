@@ -12,3 +12,12 @@ npx hardhat run scripts/deploy.js --network sepolia
 ```
 > Choose "Create a basic sample project"
 Follow the prompts and install dependencies
+
+🔐 Step 2: Install dotenv
+'''
+npm install dotenv
+'''
+Create a .env file in your root folder:
+
+INFURA_API_KEY=your_infura_key
+PRIVATE_KEY=your_wallet_private_key
