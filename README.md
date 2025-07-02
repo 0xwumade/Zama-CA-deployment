@@ -8,14 +8,14 @@ As part of the #ZamaCreatorProgram, I deployed my first smart contract to Sepoli
 
 ```bash
 mkdir my-new-project && cd my-new-project
-npx hardhat
-
+npx hardhat 
+```
 > Choose "Create a basic sample project" and install dependencies.
 
 🔐 Step 2: Install dotenv
-
+```
 npm install dotenv
-
+```
 Create a .env file:
 
 INFURA_API_KEY=your_infura_key
@@ -24,7 +24,7 @@ PRIVATE_KEY=your_wallet_private_key
 ⚙ Step 3: Configure Hardhat for Sepolia
 
 Edit hardhat.config.js:
-
+```
 require("dotenv").config();
 require("@nomicfoundation/hardhat-toolbox");
 
@@ -60,11 +60,11 @@ contract Lock {
         payable(msg.sender).transfer(address(this).balance);
     }
 }
-
+```
 🧠 Step 5: Create a deploy script
 
 Create scripts/deploy.js:
-
+```
 const hre = require("hardhat");
 
 async function main() {
@@ -81,13 +81,13 @@ main().catch((error) => {
   console.error("🚨 Deployment failed:", error);
   process.exitCode = 1;
 });
-
+```
 🚀 Step 6: Deploy to Sepolia
 
 Make sure you have Sepolia test ETH in your wallet. Then run:
-
+```
 npx hardhat run scripts/deploy.js --network sepolia
-
+```
 Example output:
 
 ✅ Contract deployed to: 0xABC123456789...
