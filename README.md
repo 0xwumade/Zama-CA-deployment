@@ -38,8 +38,11 @@ module.exports = {
   },
 };
 
+```
+
 📄 Step 4: Use the default Lock contract
 
+```
 Found in contracts/Lock.sol:
 
 // SPDX-License-Identifier: UNLICENSED
@@ -60,10 +63,13 @@ contract Lock {
         payable(msg.sender).transfer(address(this).balance);
     }
 }
+
 ```
+
 🧠 Step 5: Create a deploy script
 
 Create scripts/deploy.js:
+
 ```
 const hre = require("hardhat");
 
@@ -81,12 +87,15 @@ main().catch((error) => {
   console.error("🚨 Deployment failed:", error);
   process.exitCode = 1;
 });
+
 ```
 🚀 Step 6: Deploy to Sepolia
 
 Make sure you have Sepolia test ETH in your wallet. Then run:
+
 ```
 npx hardhat run scripts/deploy.js --network sepolia
+
 ```
 Example output:
 
