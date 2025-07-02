@@ -2,22 +2,15 @@ Zama-CA-deployment
 
 🚀 Zama Creator Program — My First Contract Deployment (FHEVM + Hardhat)
 
-As part of the #ZamaCreatorProgram, I deployed my first smart contract to Sepolia using Hardhat. Here's a quick summary 🧵
+As part of the #ZamaCreatorProgram, I deployed my first smart contract to Sepolia using Hardhat. Here's a quick summary
 
+### 🛠 Step 1: Initialize Hardhat project
 
----
-
-🛠 Step 1: Initialize Hardhat project
-
+```bash
 mkdir my-new-project && cd my-new-project
 npx hardhat
 
 > Choose "Create a basic sample project" and install dependencies.
-
-
-
-
----
 
 🔐 Step 2: Install dotenv
 
@@ -27,9 +20,6 @@ Create a .env file:
 
 INFURA_API_KEY=your_infura_key
 PRIVATE_KEY=your_wallet_private_key
-
-
----
 
 ⚙ Step 3: Configure Hardhat for Sepolia
 
@@ -47,9 +37,6 @@ module.exports = {
     },
   },
 };
-
-
----
 
 📄 Step 4: Use the default Lock contract
 
@@ -74,9 +61,6 @@ contract Lock {
     }
 }
 
-
----
-
 🧠 Step 5: Create a deploy script
 
 Create scripts/deploy.js:
@@ -98,9 +82,6 @@ main().catch((error) => {
   process.exitCode = 1;
 });
 
-
----
-
 🚀 Step 6: Deploy to Sepolia
 
 Make sure you have Sepolia test ETH in your wallet. Then run:
@@ -111,9 +92,19 @@ Example output:
 
 ✅ Contract deployed to: 0xABC123456789...
 
-
----
-
 ✅ Done!
 
 Smart contract deployed successfully on Sepolia using Hardhat & Zama-compatible tools.
+
+
+---
+
+🧩 Next Steps:
+
+[ ] Submit your deployed contract address
+
+[ ] Verify it on Etherscan (optional)
+
+[ ] Interact with it via a frontend or scripts
+
+[ ] Build Zama FHE logic into the contract 🔒🧠
