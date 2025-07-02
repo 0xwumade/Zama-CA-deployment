@@ -7,7 +7,6 @@ As part of the #ZamaCreatorProgram, I deployed my first smart contract to Sepoli
 🛠 Step 1: Initialize Hardhat project
 ### 🚀 Deploy to Sepolia
 
-```bash
+```
 npx hardhat run scripts/deploy.js --network sepolia
-> Choose "Create a basic sample project"
-Follow the prompts and install dependencies
+```
